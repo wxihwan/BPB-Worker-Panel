@@ -21,7 +21,7 @@ let dohURL = 'https://cloudflare-dns.com/dns-query';
 
 let panelVersion = '2.5';
 
-if (!isValidUUID(userID)) {5c69bb695cc29b93d655e1a4bb5656cda624080d686f74477ea09349
+if (!isValidUUID(userID)) {
     throw new Error('uuid is not valid');
 }
 
