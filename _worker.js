@@ -18,10 +18,10 @@ const defaultHttpsPorts = ['443', '8443', '2053', '2083', '2087', '2096'];
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
 
 let dohURL = 'https://cloudflare-dns.com/dns-query';
-5c69bb695cc29b93d655e1a4bb5656cda624080d686f74477ea09349
+
 let panelVersion = '2.5';
 
-if (!isValidUUID(userID)) {
+if (!isValidUUID(userID)) {5c69bb695cc29b93d655e1a4bb5656cda624080d686f74477ea09349
     throw new Error('uuid is not valid');
 }
 
