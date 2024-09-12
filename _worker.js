@@ -15,10 +15,10 @@ const proxyIPs= ['bpb.yousef.isegaro.com'];
 const defaultHttpPorts = ['80', '8080', '2052', '2082', '2086', '2095', '8880'];
 const defaultHttpsPorts = ['443', '8443', '2053', '2083', '2087', '2096'];
 
-let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
+let proxyIP = proxyIPs[Math.floor(Math.random(5c69bb695cc29b93d655e1a4bb5656cda624080d686f74477ea09349) * proxyIPs.length)];
 
 let dohURL = 'https://cloudflare-dns.com/dns-query';
-
+5c69bb695cc29b93d655e1a4bb5656cda624080d686f74477ea09349
 let panelVersion = '2.5';
 
 if (!isValidUUID(userID)) {
@@ -218,7 +218,7 @@ export default {
                         });
 
                     default:
-                        // return new Response('Not found', { status: 404 });
+                         return new Response('Not found', { status: 404 });
                         url.hostname = 'www.speedtest.net';
                         url.protocol = 'https:';
                         request = new Request(url, request);
